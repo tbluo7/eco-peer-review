@@ -49,6 +49,8 @@ description: 审项目弱点（基金申请书/开题/研究计划/论文稿）�
 
 每关按"审讯问句 → 弱点模式 → 语料校准 → 取证"走。问句逐条问，见到模式即命中。
 
+**生态学细化**：第 6 关（方法关）过完后，用 `references/ecology_kill_list.md` 逐条扫一遍 16 个生态学特有方法问题。该表按「被列为 major 的概率」排序——伪重复 79.7%、空间自相关 59.3%、检测概率 57.7%、共线性 53.7%，全部远高于全库 28.9% 的基线。命中任意一条，直接按 major 处理。这是本库作为生态学垂类最不可替代的一层。
+
 ### 第 1 关 · 问题关（科学问题与立论）
 - **问句**：科学问题能一句话说清吗（不能→命中）？是真问题还是领域缺口——"没人做过 X"不是问题，"X 与 Y 的矛盾未解"才是？立项依据是否自然推出该问题，还是突然出现？核心概念有定义吗、近义概念（plasticity/evolution、heterogeneity/stochasticity 式）有没有混用？
 - **模式**：目标当问题（"研究变暖对 X 的影响"）；综述堆文献不指向缺口；重要性只靠 "first study" 撑。
@@ -123,7 +125,7 @@ description: 审项目弱点（基金申请书/开题/研究计划/论文稿）�
 按研究类型找    pattern: "study_type": "meta_analysis"   path: data/paper_index.jsonl
 ```
 
-文件地图：`stats_overview.md` 必读基线；`playbooks.md` 按命中类别读对应节（§n=类别序号）；`defense_playbook.md` 命中后查应对（同为 §n）；`taste_gate.md` 品位关（六问，判断层）；`pre_submission_rejections.md` 送审前第 0 关；`provenance.md` 语料来源、字段可靠性、重建方法；三个 jsonl 见上。paper_index 每行的 `cats_major` 列出该篇被列 major 的类别。
+文件地图：`stats_overview.md` 必读基线；`ecology_kill_list.md` **生态学特有方法问题（按 major 率排序，垂类核心）**；`playbooks.md` 按命中类别读对应节（§n=类别序号）；`defense_playbook.md` 命中后查应对（同为 §n）；`taste_gate.md` 品位关（六问，判断层）；`pre_submission_rejections.md` 送审前第 0 关；`provenance.md` 语料来源、字段可靠性、重建方法；三个 jsonl 见上。paper_index 每行的 `cats_major` 列出该篇被列 major 的类别。
 
 ## 诚实性
 
