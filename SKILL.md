@@ -17,6 +17,8 @@ description: 审项目弱点（基金申请书/开题/研究计划/论文稿）�
 
 三步：**画像 → 七关过堂 → 定级输出**。
 
+**先过品位关**（`references/taste_gate.md`）：七关问"会不会被打"，品位关问"**值不值得做**"。六问——置换测试、缺口 vs 重构、最近三篇、尺度匹配、承诺与交付、零结果测试。**该节无语料支撑，全部为判断，文件内已标注。** 品位关失败时，七关的修补没有意义。
+
 **投稿/送审前加跑第 0 关 · 桌拒关**（`references/pre_submission_rejections.md`）：七关审的是"能不能扛住审稿人"，第 0 关审的是"能不能见到审稿人"。**该节无语料覆盖，文件内已逐条标注【判断】，不得包装成数据。**
 
 ## 第一步：画像
@@ -104,7 +106,7 @@ description: 审项目弱点（基金申请书/开题/研究计划/论文稿）�
 按研究类型找    pattern: "study_type": "meta_analysis"   path: data/paper_index.jsonl
 ```
 
-文件地图：`stats_overview.md` 必读基线；`playbooks.md` 按命中类别读对应节（§n=类别序号）；`defense_playbook.md` 命中后查应对（同为 §n）；`pre_submission_rejections.md` 送审前第 0 关；`provenance.md` 语料来源、字段可靠性、重建方法；三个 jsonl 见上。paper_index 每行的 `cats_major` 列出该篇被列 major 的类别。
+文件地图：`stats_overview.md` 必读基线；`playbooks.md` 按命中类别读对应节（§n=类别序号）；`defense_playbook.md` 命中后查应对（同为 §n）；`taste_gate.md` 品位关（六问，判断层）；`pre_submission_rejections.md` 送审前第 0 关；`provenance.md` 语料来源、字段可靠性、重建方法；三个 jsonl 见上。paper_index 每行的 `cats_major` 列出该篇被列 major 的类别。
 
 ## 诚实性
 
@@ -114,4 +116,5 @@ description: 审项目弱点（基金申请书/开题/研究计划/论文稿）�
 - 严决定组某类高 ≠ 该类导致拒稿，别写成因果。
 - 基金评审的队伍/预算/政策维度语料不管——缺什么明说，别硬编。
 - 第 0 关（桌拒）与 `defense_playbook.md` 的档位判断均为评审经验推演，**不是语料统计**；引用时必须与带 id 的语料证据分开表述。
+- 品位关（`taste_gate.md`）同样无语料支撑。本库只能测"缺陷有多常见"，测不了"值不值得做"——`strengths` 字段是客套与完成度，`editor_summary` 是操作指令，都不构成价值判断。
 - 不替用户做资助/接收决定：给分级弱点清单和证据，决定权在评审人。
